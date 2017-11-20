@@ -3,6 +3,16 @@
 
 @import "{{ site.theme }}";
 
+.container {
+    max-width: none;
+    display: flex;
+}
+
+.pages-container {
+    margin-left: auto;
+    margin-top: auto;
+}
+
 header h1:before {
     content: "./";
 }
