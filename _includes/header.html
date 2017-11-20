@@ -1,0 +1,13 @@
+<header>
+    <div class="container">
+        <div class="title-container">
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        </div>
+        <div class="pages-container">
+            {% for page in site.pages %}
+            <a href="{{ page.url }}">{{ page.title }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</header>
