@@ -13,6 +13,11 @@ header h1, header h2 {
 header {
     background: #2F3240;
     border-bottom: 1px dashed #73B1BE;
+    padding: 10px 0;
+}
+
+header h2 {
+    margin: -1vh 0 0 -1.75vh;
 }
 
 body {
