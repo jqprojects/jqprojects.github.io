@@ -22,6 +22,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #9EE9F8;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Header */
 header {
     background: #2F3240;
@@ -31,6 +39,25 @@ header {
 
 header h1, header h2 {
     color: #73B1BE;
+}
+
+@keyframes on-title-animation {
+    from {color: #73B1BE;}
+    to {color: #FFF;}
+}
+@keyframes off-title-animation {
+    from {color: #FFF;}
+    to {color: #73B1BE;}
+}
+header h1:hover {
+    animation-name: on-title-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+header h1 {
+    animation-name: off-title-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 header h2 {
@@ -43,6 +70,10 @@ header h1:before {
 
 #title {
     cursor: pointer;
+}
+
+#title:hover {
+
 }
 
 /* Content */
