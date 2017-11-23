@@ -72,10 +72,6 @@ header h1:before {
     cursor: pointer;
 }
 
-#title:hover {
-
-}
-
 /* Content */
 .pages-container {
     margin-left: auto;
@@ -109,4 +105,10 @@ header h1:before {
     margin-top: auto;
     padding: 30px;
     border-top: 1px dashed #73B1BE;
+}
+
+.octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
 }
