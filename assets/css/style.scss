@@ -1,7 +1,32 @@
 ---
+primary-color: #73B1BE
+secondary-color: #9EE9F8
 ---
 
 @import "{{ site.theme }}";
+
+
+header h1, header h2 {
+    color: #73B1BE;
+}
+
+header {
+    background: #2F3240;
+    border-bottom: 1px dashed #73B1BE;
+}
+
+body {
+    background: #2B2F3B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #9EE9F8;
+}
+
+hr {
+    border-bottom: 1px dashed #9EE9F8;
+    color: #9EE9F8;
+}
 
 .container {
     max-width: none;
@@ -19,4 +44,33 @@
 
 header h1:before {
     content: "./";
+}
+
+#page-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+#main-content {
+    min-height: 55vh;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+#main-content h2 {
+    font-size: 24px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    color: #73B1BE;
+    text-align: right;
+    margin-top: auto;
+    padding: 30px;
+    border-top: 1px dashed #73B1BE;
 }
