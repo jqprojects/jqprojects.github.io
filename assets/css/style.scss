@@ -41,21 +41,21 @@ header h1, header h2 {
     color: #73B1BE;
 }
 
-@keyframes on-title-animation {
+@keyframes on-highlight-animation {
     from {color: #73B1BE;}
     to {color: #9EE9F8;}
 }
-@keyframes off-title-animation {
+@keyframes off-highlight-animation {
     from {color: #9EE9F8;}
     to {color: #73B1BE;}
 }
 header h1:hover {
-    animation-name: on-title-animation;
+    animation-name: on-highlight-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 header h1 {
-    animation-name: off-title-animation;
+    animation-name: off-highlight-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -111,4 +111,16 @@ header h1:before {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
+}
+
+.clickable-icons:hover {
+    animation-name: on-highlight-animation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.clickable-icons:not {
+    animation-name: off-highlight-animation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
 }
