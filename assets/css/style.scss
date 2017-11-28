@@ -41,6 +41,10 @@ header h1, header h2 {
     color: #73B1BE;
 }
 
+    header h1 {
+        margin: 0 5em 0 -1em;
+    }
+
 @keyframes on-highlight-animation {
     from {color: #73B1BE;}
     to {color: #9EE9F8;}
@@ -54,7 +58,7 @@ header h1:hover {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-header h1 {
+header h1:not {
     animation-name: off-highlight-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -86,6 +90,10 @@ header h1:before {
 #page-content {
     max-width: 700px;
     margin: auto;
+}
+
+.content-container {
+    padding: 2em 0 2em 0;
 }
 
 #main-content {
@@ -120,7 +128,6 @@ header h1:before {
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
-
 .clickable-icons:not {
     animation-name: off-highlight-animation;
     animation-duration: 0.1s;
@@ -129,7 +136,7 @@ header h1:before {
 
 #index-title {
     text-align: center;
-    margin: 5% 0 5% 0;
+    margin: 1em 0 1em 0;
 }
 
 .main-icons {
@@ -140,7 +147,7 @@ header h1:before {
 
 #about-me-icon {
     cursor: pointer;
-    color: #73B1BE;
+    color: #445b67;
 }
 #about-me-icon:hover {
     animation-name: on-highlight-animation;
@@ -155,7 +162,8 @@ header h1:before {
 
 #my-github-icon {
     cursor: pointer;
-    color: #73B1BE;
+    color: #445b67;
+    padding: 0 2em 0 2em;
 }
 #my-github-icon:hover {
     animation-name: on-highlight-animation;
@@ -170,7 +178,7 @@ header h1:before {
 
 #my-email-icon {
     cursor: pointer;
-    color: #73B1BE;
+    color: #445b67;
 }
 #my-email-icon:hover {
     animation-name: on-highlight-animation;
