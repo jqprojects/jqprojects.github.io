@@ -177,16 +177,16 @@ header h1:before {
     animation-fill-mode: forwards;
 }
 
-#my-email-icon {
+#my-projects-icon {
     cursor: pointer;
     color: #445b67;
 }
-#my-email-icon:hover {
+#my-projects-icon:hover {
     animation-name: on-highlight-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-#my-email-icon:not {
+#my-projects-icon:not {
     animation-name: off-highlight-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
