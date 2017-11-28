@@ -9,7 +9,9 @@ Hi everyone!
 
 I've created this blog as a personal project to talk about my other
 personal projects (lol). I also want to document what I learn in the process of
-developing my projects. A little bit about myself: my name is Gerardo Quintero.  
+developing my projects. A little bit about myself:
+
+my name is Gerardo Quintero.  
 I'm a 4th-year Computer Science student. My first language (mother tongue?) is
 Java, and I'm learning Android development to specialize in it. I've also played
 with C/C++, since I have a love/hate relationship with low-level computing concepts.
