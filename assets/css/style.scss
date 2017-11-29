@@ -191,3 +191,10 @@ header h1:before {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+
+/* Post Layout */
+#post-content {
+    max-width: 40em;
+    margin: auto;
+    text-align: left;
+}
