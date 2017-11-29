@@ -2,8 +2,16 @@
 layout: page
 ---
 
-{% for post in site.posts %}
+{% for project in site.data.projects %}
 
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="project-list-item">    
+        <h5>{{ project.name }}</h5>
+        <ul title="Skills">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>{{ project.description }}</p>
+    </div>
 
 {% endfor %}
