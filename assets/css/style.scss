@@ -30,6 +30,19 @@ a:hover {
     text-decoration: underline;
 }
 
+ul li {
+    list-style-image: unset;
+    list-style: none;
+    text-align: left;
+    color: #73B1BE;
+    font-weight: bold;
+}
+
+ul li:before {
+    content: ">>";
+    margin: 1em;
+}
+
 /* Header */
 header {
     background: #2F3240;
@@ -197,4 +210,14 @@ header h1:before {
     max-width: 40em;
     margin: auto;
     text-align: left;
+}
+
+/* Projects Page */
+.project-list-item {
+    border: 1px dashed #73B1BE;
+    padding: 1em;
+    text-align: left;
+}
+#project-name {
+    text-align: center;
 }
