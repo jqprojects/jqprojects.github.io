@@ -1,5 +1,4 @@
 ---
-# layout: page
 layout: page
 title: About Me
 permalink: /about/
