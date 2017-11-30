@@ -96,6 +96,11 @@ header h1:before {
     margin-top: auto;
 }
 
+.pages-container a {
+    padding-right: 1.5em;
+    float: right;
+}
+
 .container {
     max-width: none;
     display: flex;
