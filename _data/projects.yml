@@ -1,14 +1,44 @@
 -   name: "Atom DuckyScript Grammar"
     description: "Syntax grammaer for the Atom text editor."
+    skills:
+        - "CSON"
+        - "Atom API"
+
 -   name: "Sublime DuckyScript Definition"
     description: "Syntax definition for the Sublime Text editor."
+    skills:
+        - "YAML"
+        - "Sublime API"
+
 -   name: "JShell"
     description: "My attempt at creating a shell for a school project."
+    skills:
+        - "C/C++"
+        - "Linux"
 -   name: "AI Project"
     description: "AI class project that uses AI search algorithms in a game."
+    skills:
+        - "Java"
+        - "Game Development"
+
 -   name: "jqProjects Blog"
     description: "A personal blog for the rest of my projects."
+    skills:
+        - "Jekyll"
+        - "HTML"
+        - "CSS"
+        - "jQuery"
+
 -   name: "CodeEval"
     description: "My solutions for the CodeEval Challenges."
+    skills:
+        - "Java"
+        - "Python"
+        - "Ruby"
+        - "C/C++"
+        - "Go"
+
 -   name: "Book Challenges"
     description: "Solving chapter summary problems in various books."
+    skills:
+        - "Java"
