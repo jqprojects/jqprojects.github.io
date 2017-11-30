@@ -5,7 +5,7 @@ title: About Me
 permalink: /about/
 ---
 
-Hi everyone!
+<p style="text-align: center;">Hi everyone!</p>
 
 I've created this blog as a personal project to talk about my other
 personal projects (lol). I also want to document what I learn in the process of
@@ -25,6 +25,6 @@ by creating this blog with [Jekyll][1], it'll give me a chance to learn more abo
 web development. I get to learn a new skill set and have a place to talk about
 my projects!
 
-Win-win :D
+<p style="text-align: center;">Win-win :D</p>
 
 [1]: https://jekyllrb.com/
