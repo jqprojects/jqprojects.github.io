@@ -36,6 +36,16 @@ plugins:
   - jekyll-feed
   - jekyll-octicons
 
+# Default matter.
+defaults:
+    -
+        scope:
+            # Files of type 'post' will have this front matter by default AKA all _posts/ files.
+            type: "posts"
+        values:
+            # Default front matter values to be applied.
+            layout: "post"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
