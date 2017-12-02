@@ -28,5 +28,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gem for Octicons.
 gem 'jekyll-octicons'
-# Gem for the jQuery version of typed.js.
-gem 'typedjq-rails'
