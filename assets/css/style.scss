@@ -55,9 +55,9 @@ header h1, header h2 {
     color: #73B1BE;
 }
 
-    header h1 {
-        margin: 0 5em 0 -1em;
-    }
+header h1 {
+    margin: 0 5em 0 -1em;
+}
 
 @keyframes on-highlight-animation {
     from {color: #73B1BE;}
@@ -218,7 +218,7 @@ header h1:before {
 #post-content {
     max-width: 40em;
     margin: auto;
-    text-align: left;
+    text-align: justify;
 }
 
 /* Projects Page */
@@ -229,4 +229,15 @@ header h1:before {
 }
 #project-name {
     text-align: center;
+}
+
+/* Posts Page */
+div.post-list-item {
+    position: relative;
+}
+
+.post-list-item p {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
