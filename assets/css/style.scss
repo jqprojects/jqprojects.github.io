@@ -1,8 +1,5 @@
 ---
-primary-color: #73B1BE
-secondary-color: #9EE9F8
 ---
-
 @import "{{ site.theme }}";
 
 /****** Defaults *******/
@@ -42,8 +39,39 @@ ul li:before {
 
 /****** Global Classes *******/
 .clickable { cursor: pointer; }
+.primary-color { color: #73B1BE; }
+.secondary-color { color: #9EE9F8; }
+.faded-element {color: #445B67;}
 
-
+.slow-highlight {
+    animation-name: off-highlight-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.slow-highlight:hover {
+    animation-name: on-highlight-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.fast-highlight {
+    animation-name: off-highlight-animation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.fast-highlight:hover {
+    animation-name: on-highlight-animation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.faded-element {
+    animation-name: fade-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
+.faded-element:hover {
+    animation-name: unfade-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 /****** Global Classes *******/
 
 /* Header */
@@ -53,32 +81,14 @@ header {
     padding: 1em 0;
 }
 
-header h1, header h2 {
-    color: #73B1BE;
-}
-
 header h1 {
     margin: 0 5em 0.2em -1em;
 }
 
-@keyframes on-highlight-animation {
-    from {color: #73B1BE;}
-    to {color: #9EE9F8;}
-}
-@keyframes off-highlight-animation {
-    from {color: #9EE9F8;}
-    to {color: #73B1BE;}
-}
-header h1:hover {
-    animation-name: on-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-header h1:not {
-    animation-name: off-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
+@keyframes on-highlight-animation { from {color: #73B1BE;} to {color: #9EE9F8;} }
+@keyframes off-highlight-animation { from {color: #9EE9F8;} to {color: #73B1BE;} }
+@keyframes unfade-animation { from { color: #445B67; } to { color: #9EE9F8; } }
+@keyframes fade-animation { from { color: #9EE9F8; } to { color: #445B67; } }
 
 header h2 {
     margin: 0;
@@ -123,7 +133,6 @@ header h1:before {
 
 /* Footer */
 .footer {
-    color: #73B1BE;
     text-align: right;
     margin-top: auto;
     padding: 1em;
@@ -138,17 +147,6 @@ header h1:before {
     margin: 5px;
 }
 
-.clickable-icons:hover {
-    animation-name: on-highlight-animation;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-}
-.clickable-icons:not {
-    animation-name: off-highlight-animation;
-    animation-duration: 0.1s;
-    animation-fill-mode: forwards;
-}
-
 #index-title {
     text-align: center;
     margin: 1em 0 1em 0;
@@ -161,47 +159,8 @@ header h1:before {
     justify-content: center;
 }
 
-#about-me-icon {
-    color: #445b67;
-}
-#about-me-icon:hover {
-    animation-name: on-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#about-me-icon:not {
-    animation-name: off-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
 #my-github-icon {
-    color: #445b67;
     padding: 0 2em 0 2em;
-}
-#my-github-icon:hover {
-    animation-name: on-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#my-github-icon:not {
-    animation-name: off-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-#my-projects-icon {
-    color: #445b67;
-}
-#my-projects-icon:hover {
-    animation-name: on-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-#my-projects-icon:not {
-    animation-name: off-highlight-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 /* Post Layout */
