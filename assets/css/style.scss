@@ -40,6 +40,12 @@ ul li:before {
 }
 /****** Defaults *******/
 
+/****** Global Classes *******/
+.clickable { cursor: pointer; }
+
+
+/****** Global Classes *******/
+
 /* Header */
 header {
     background: #2F3240;
@@ -80,10 +86,6 @@ header h2 {
 
 header h1:before {
     content: "./";
-}
-
-#title {
-    cursor: pointer;
 }
 
 /* Content */
@@ -160,7 +162,6 @@ header h1:before {
 }
 
 #about-me-icon {
-    cursor: pointer;
     color: #445b67;
 }
 #about-me-icon:hover {
@@ -175,7 +176,6 @@ header h1:before {
 }
 
 #my-github-icon {
-    cursor: pointer;
     color: #445b67;
     padding: 0 2em 0 2em;
 }
@@ -191,7 +191,6 @@ header h1:before {
 }
 
 #my-projects-icon {
-    cursor: pointer;
     color: #445b67;
 }
 #my-projects-icon:hover {
