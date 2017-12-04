@@ -4,10 +4,10 @@ layout: page
 
 {% for project in site.data.projects %}
 
-    <div class="project-list-item">
+    <div id="project-list-item">
         <a href="{{ project.url }}"><h4 id="project-name">{{ project.name }}</h4></a>
         <p>{{ project.description }}</p>
-        <h5>Skills:</h5>
+        <h5 id="skills-header">Skills:</h5>
         <ul>
             {% for skill in project.skills %}
                 <li>{{ skill }}</li>

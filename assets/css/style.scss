@@ -33,7 +33,7 @@ ul li {
 
 ul li:before {
     content: ">>";
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 /******* Defaults *******/
 
@@ -42,6 +42,7 @@ ul li:before {
 .primary-color { color: #73B1BE; }
 .secondary-color { color: #9EE9F8; }
 .faded-color {color: #445B67;}
+.big-layout-title { font-size: 1.75em; text-align: center;}
 
 .slow-highlight {
     animation-name: off-highlight-animation;
@@ -168,12 +169,6 @@ header h2 {
 }
 /******* Home Layout *******/
 
-/******* Page Layout *******/
-#page-title {
-    font-size: 1.75em;
-}
-/******* Page Layout *******/
-
 /******* Blog Layout *******/
 #post-list-item {
     position: relative;
@@ -183,20 +178,29 @@ header h2 {
 #post-list-item i {
     position: absolute;
     right: 0;
-    top: 0;
-    text-align: right;
 }
 /******* Blog Layout *******/
 
-/* Projects Page Layout */
-.project-list-item {
+/******* Projects Page Layout *******/
+#project-list-item {
     border: 1px dashed #73B1BE;
+    margin-top: 1em;
     padding: 1em;
     text-align: left;
 }
 #project-name {
+    font-size: 1.25em;
     text-align: center;
 }
+
+#skills-header {
+    margin: 1em 0 0 0;
+}
+
+#project-list-item li {
+    margin-left: 1em;
+}
+/******* Projects Page Layout *******/
 
 /******* Animations *******/
 @keyframes on-highlight-animation { from {color: #73B1BE;} to {color: #9EE9F8;} }
