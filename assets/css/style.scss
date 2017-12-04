@@ -115,31 +115,21 @@ header h2 {
 }
 /******* Header *******/
 
-/* Content */
-#page-content {
+/******* Content *******/
+#content {
     max-width: 40em;
-    margin: auto;
+    margin: 0 auto; // Recommended way of centering an element.
     text-align: justify;
 }
-#page-content h2 {
-    text-align: center;
-}
+/******* Content *******/
 
-#main-content {
-    padding: 2em 0 2em 0;
-}
-
-#main-content h2 {
-    font-size: 1.55em;
-}
-
-/* Footer */
+/******* Footer *******/
 .footer {
     text-align: right;
-    margin-top: auto;
     padding: 1em;
     border-top: 1px dashed #73B1BE;
 }
+/******* Footer *******/
 
 /* Icons */
 .octicon {
@@ -155,6 +145,11 @@ header h2 {
     font-size: 3.75em;
 }
 
+#content h2 {
+    font-size: 1.55em;
+    text-align: center;
+}
+
 .main-icons {
     display: flex;
     text-align: center;
@@ -166,11 +161,7 @@ header h2 {
 }
 
 /* Post Layout */
-#post-content {
-    max-width: 40em;
-    margin: auto;
-    text-align: justify;
-}
+
 
 /* Projects Page */
 .project-list-item {
