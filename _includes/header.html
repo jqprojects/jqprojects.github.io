@@ -1,19 +1,31 @@
 <header>
-    <div class="container">
-        <div class="title-container">
-            <h1 class="primary-color clickable" id="title">{{ site.title | default: site.github.repository_name }}</h1>
-            <h2 class="primary-color">{{ site.description | default: site.github.project_tagline }}</h2>
-        </div>
-        <div class="pages-container">
-            {% for item in site.pages %}
+    <div class="title-container">
+        <h1 class="primary-color clickable" id="title">{{ site.title | default: site.github.repository_name }}</h1>
+        <h2 class="primary-color">{{ site.description | default: site.github.project_tagline }}</h2>
+    </div>
 
-                <a style="{% if item.url == page.url %}
+    <ul id="pages-list">
+        {% for item in site.pages %}
+            {% if item.nav == true %}
+                <li><a style="
+                        {% if item.url == page.url %}
                             color: #9EE9F8;
                             text-decoration: underline;
                         {% endif %}"
-                href="{{ item.url }}">{{ item.title }}</a>
+                        href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <!-- <div id="pages-container">
+        {% for item in site.pages %}
 
-            {% endfor %}
-        </div>
-    </div>
+            <a style="{% if item.url == page.url %}
+                        color: #9EE9F8;
+                        text-decoration: underline;
+                    {% endif %}"
+            href="{{ item.url }}">{{ item.title }}</a>
+
+        {% endfor %}
+    </div> -->
 </header>

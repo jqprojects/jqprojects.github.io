@@ -74,7 +74,7 @@ ul li:before {
 }
 /******* Global Classes *******/
 
-/* Header */
+/******* Header *******/
 header {
     background: #2F3240;
     border-bottom: 1px dashed #73B1BE;
@@ -82,40 +82,40 @@ header {
 }
 
 header h1 {
-    margin: 0 5em 0.2em -1em;
-}
-
-/******* Animations *******/
-@keyframes on-highlight-animation { from {color: #73B1BE;} to {color: #9EE9F8;} }
-@keyframes off-highlight-animation { from {color: #9EE9F8;} to {color: #73B1BE;} }
-@keyframes unfade-animation { from { color: #445B67; } to { color: #9EE9F8; } }
-@keyframes fade-animation { from { color: #9EE9F8; } to { color: #445B67; } }
-/******* Animations *******/
-
-header h2 {
-    margin: 0;
+    margin: 0 0 0 1em;
 }
 
 header h1:before {
     content: "./";
+    font-size: unset;
 }
+
+header h2 {
+    margin: 0 0 0 3em;
+    font-weight: unset;
+}
+
+#pages-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding: 0 0.5em 0 0.5em;
+}
+
+#pages-list li {
+    display: inline;
+    font-weight: unset;
+    color: unset;
+    padding: 0.5em;
+}
+
+#pages-list li:before {
+    content: unset;
+}
+/******* Header *******/
 
 /* Content */
-.pages-container {
-    margin-left: auto;
-    margin-top: auto;
-}
-
-.pages-container a {
-    padding-right: 1.5em;
-    float: right;
-}
-
-.container {
-    max-width: none;
-    display: flex;
-}
-
 #page-content {
     max-width: 40em;
     margin: auto;
@@ -194,3 +194,10 @@ div.post-list-item {
     top: 0;
     text-align: right;
 }
+
+/******* Animations *******/
+@keyframes on-highlight-animation { from {color: #73B1BE;} to {color: #9EE9F8;} }
+@keyframes off-highlight-animation { from {color: #9EE9F8;} to {color: #73B1BE;} }
+@keyframes unfade-animation { from { color: #445B67; } to { color: #9EE9F8; } }
+@keyframes fade-animation { from { color: #9EE9F8; } to { color: #445B67; } }
+/******* Animations *******/

@@ -2,6 +2,7 @@
 layout: page
 title: About Me
 permalink: /about/
+nav: true
 ---
 
 <p style="text-align: center;">Hi everyone!</p>
