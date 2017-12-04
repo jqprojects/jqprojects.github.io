@@ -4,11 +4,10 @@ layout: page
 
 {% for post in site.posts %}
 
-    <div class="post-list-item">
+    <div id="post-list-item">
 
-        <div><a href="{{ post.url }}">{{ post.title }}</a></div>
-
-        <p><i>{{ post.date | date: "%B %-d, %Y" }}</i></p>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <i>{{ post.date | date: "%B %-d, %Y" }}</i>
 
     </div>
 

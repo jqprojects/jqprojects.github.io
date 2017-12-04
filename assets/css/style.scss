@@ -168,18 +168,25 @@ header h2 {
 }
 /******* Home Layout *******/
 
-/* Post Page Layout */
-div.post-list-item {
+/******* Page Layout *******/
+#page-title {
+    font-size: 1.75em;
+}
+/******* Page Layout *******/
+
+/******* Blog Layout *******/
+#post-list-item {
     position: relative;
-    margin-top: 2em;
+    margin: 1em 0 1em 0;
 }
 
-.post-list-item p {
+#post-list-item i {
     position: absolute;
     right: 0;
     top: 0;
     text-align: right;
 }
+/******* Blog Layout *******/
 
 /* Projects Page Layout */
 .project-list-item {
