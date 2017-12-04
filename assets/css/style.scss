@@ -2,7 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
-/****** Defaults *******/
+/******* Defaults *******/
 body {
     background: #2B2F3B;
     flex-direction: column;
@@ -35,13 +35,13 @@ ul li:before {
     content: ">>";
     margin-right: 1em;
 }
-/****** Defaults *******/
+/******* Defaults *******/
 
-/****** Global Classes *******/
+/******* Global Classes *******/
 .clickable { cursor: pointer; }
 .primary-color { color: #73B1BE; }
 .secondary-color { color: #9EE9F8; }
-.faded-element {color: #445B67;}
+.faded-color {color: #445B67;}
 
 .slow-highlight {
     animation-name: off-highlight-animation;
@@ -63,16 +63,16 @@ ul li:before {
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
-.faded-element {
+.fade {
     animation-name: fade-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards; }
-.faded-element:hover {
+.fade:hover {
     animation-name: unfade-animation;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-/****** Global Classes *******/
+/******* Global Classes *******/
 
 /* Header */
 header {
@@ -85,10 +85,12 @@ header h1 {
     margin: 0 5em 0.2em -1em;
 }
 
+/******* Animations *******/
 @keyframes on-highlight-animation { from {color: #73B1BE;} to {color: #9EE9F8;} }
 @keyframes off-highlight-animation { from {color: #9EE9F8;} to {color: #73B1BE;} }
 @keyframes unfade-animation { from { color: #445B67; } to { color: #9EE9F8; } }
 @keyframes fade-animation { from { color: #9EE9F8; } to { color: #445B67; } }
+/******* Animations *******/
 
 header h2 {
     margin: 0;
