@@ -24,6 +24,7 @@ $(document).ready(function() {
     new TypeIt('#index-title', {
         strings: ['<b>./jqProjects</b>'],
         html: true,
-        speed: 100
+        speed: 100,
+        lifeLike: true
     });
 });
