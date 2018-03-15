@@ -76,6 +76,10 @@ ul li:before {
 /******* Global Classes *******/
 
 /******* Header *******/
+#title-container {
+    display: inline-block;
+}
+
 header {
     background: #2F3240;
     border-bottom: 1px dashed #73B1BE;
@@ -84,6 +88,7 @@ header {
 
 header h1 {
     margin: 0 0 0 1em;
+    display: inline;
 }
 
 header h1:before {
