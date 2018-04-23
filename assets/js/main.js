@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function() {
     $("#title").click(function() {
         window.location = "/";
@@ -27,4 +29,15 @@ $(document).ready(function() {
         speed: 100,
         lifeLike: true
     });
+
+    var homeURL = window.location.protocol + "//" + window.location.host + "/";
+    if(location.href != homeURL)
+    {
+        console.log("We here.");
+        new TypeIt('.big-layout-title', {
+            strings: ["{{ layout.title }}"],
+            speed: 100,
+            lifeLike: true
+        });
+    }
 });
