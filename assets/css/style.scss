@@ -3,6 +3,12 @@
 @import "{{ site.theme }}";
 
 /******* Defaults *******/
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0px;
+}
+
 body {
     background: #2B2F3B;
     flex-direction: column;
@@ -23,6 +29,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    color: #9EE9F8;
 }
 
 ul li {
@@ -130,6 +137,7 @@ header h2 {
     max-width: 40em;
     margin: 0 auto; // Recommended way of centering an element.
     text-align: justify;
+    padding: 1em;
 }
 /******* Content *******/
 
