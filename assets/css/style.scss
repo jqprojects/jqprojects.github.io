@@ -35,6 +35,10 @@ ul li:before {
     content: ">>";
     margin-right: 0.5em;
 }
+
+ol {
+    list-style: decimal;
+}
 /******* Defaults *******/
 
 /******* Global Classes *******/
